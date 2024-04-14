@@ -1,0 +1,325 @@
+[
+{
+    "uuid": "82008701-4189-4693-9B68-00E32C78AB92",
+    "id": 0,
+    "name": "plank",
+    "title": "Plank",
+    "alias": [],
+    "primer": "is a simple bodyweight exercise that involves holding a push-up position, keeping the body straight from head to heels. It primarily targets the core muscles, promoting strength and stability.",
+    "type": "compound",
+    "primary": [
+      "obliques"
+    ],
+    "secondary": [],
+    "equipment": [
+      "body"
+    ],
+    "steps": [
+      "Begin by lying face down with your elbows bent directly under your shoulders and your forearms on the ground.",
+      "Lift your body off the ground, keeping your body in a straight line from head to heels, and hold this position for the desired duration, engaging your core muscles.",
+    ],
+    "references": ["https://www.acefitness.org/education-and-resources/lifestyle/blog/5814/how-to-perform-the-perfect-plank/"],
+    "pdf": [
+        "pdf/0003-tension.pdf",
+      "pdf/0003-relaxation.pdf"
+    ],
+    "png": [
+        "png/0003-tension.png",
+        "png/0003-relaxation.png"
+    ],
+    "video": [
+        "Plank"
+    ]
+   
+  },
+  {
+    "uuid": "09F6FB3A-A7E9-4E08-8BA2-5F1CE7FDE93F",
+    "id": 1,
+    "name": "V-Up",
+    "title": "V-Up",
+    "alias": [],
+    "primer": "A dynamic core exercise where you lie on your back, simultaneously lifting your legs and upper body to form a V-shape, targeting abdominal muscles.",
+    "type": "isolation",
+    "primary": [
+      "abdominals"
+    ],
+    "secondary": [],
+    "equipment": [
+      "body"
+    ],
+    "steps": [
+      "Lie flat on your back with arms extended overhead and legs straight.",
+      "In one fluid motion, lift your legs and torso off the ground, reaching your hands toward your feet, then lower back down with control."
+    ],
+    "tips": [
+    ],
+    "references": ["https://www.bodybuilding.com/exercises/v-up"],
+    "pdf": [
+        "pdf/0001-1.pdf",
+        "pdf/0001-23.pdf"
+    ],
+      "png": [
+        "png/0001-1.png",
+        "png/0001-23.png",
+    ],
+      "video": [
+          "VUps"
+      ]
+
+  },
+{
+    "uuid": "3B32B927-5C1D-4518-8CA0-C33921837F5A",
+    "id": 2,
+    "name": "Wall push Up",
+    "title": "Wall push Up",
+    "alias": [],
+    "primer": "A beginner-friendly upper body exercise where you stand facing a wall and perform a push-up motion by pressing against the wall, engaging chest and arm muscles.",
+    "type": "isolation",
+    "primary": [
+      "pectoralis major",
+      "deltoid"
+    ],
+    "secondary": [],
+    "equipment": [
+      "body",
+      "bench"
+    ],
+    "steps": [
+      "Stand about arm's length away from a wall, with feet shoulder-width apart and hands flat against the wall at shoulder height.",
+      "Lean forward and bend elbows to lower your chest towards the wall, then push back to starting position, keeping your body in a straight line."
+    ],
+    "tips": [],
+    "references": ["https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/pushups/sls-20076592?s=1"],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "WallPushUps"
+      ]
+  },
+{
+    "uuid": "6C2203F8-7DD8-4B18-A6A0-46B17B44F9E5",
+    "id": 3,
+    "name": "T-plank",
+    "title": "T-plank",
+    "alias": [],
+    "primer": "A challenging core exercise where you hold a plank position, then lift one arm straight up toward the ceiling, forming a T-shape with your body, engaging core and shoulder muscles.",
+    "type": "isolation",
+    "primary": [
+      "pectoralis major"
+    ],
+    "secondary": [],
+    "equipment": [
+      "machine: butterfly"
+    ],
+    "steps": [
+      "Start in a plank position, with forearms on the ground and body in a straight line.",
+      "Lift one arm up towards the ceiling, rotating your torso while keeping hips square, then return to plank position and repeat on the other side."
+    ],
+    "tips": [],
+    "references": [],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "T-plank"
+      ]
+    
+  },
+{
+    "uuid": "FB545B25-89D7-4806-ACF0-B3399DFDE3A9",
+    "id": 4,
+    "name": "Push_Up",
+    "title": "Push Up",
+    "alias": [],
+    "primer": "A classic bodyweight exercise targeting the chest, shoulders, and triceps, performed by lowering and raising the body while maintaining a straight line from head to heels.",
+    "type": "compound",
+    "primary": [
+      "triceps brachii"
+    ],
+    "secondary": [],
+    "equipment": [],
+    "steps": [
+      "Start in a plank position with hands shoulder-width apart and feet together.",
+      "Lower your body until your chest nearly touches the ground, then push back up to starting position."
+    ],
+    "tips": [],
+    "references": ["Lower your body until your chest nearly touches the ground, then push back up to starting position."],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "PushUps"
+      ]
+  },
+ {
+    "uuid": "599F78F6-12A3-40D9-8E64-DB407FA47F11",
+    "id": 5,
+    "name": "Pike Push Up",
+    "title": "Pike Push Up",
+    "alias": [],
+    "primer": "A variation of the push-up targeting the shoulders and upper body, performed by starting in a downward dog position and bending the elbows to lower the head towards the ground.",
+    "type": "isolation",
+    "primary": [
+      "triceps brachii"
+    ],
+    "secondary": [],
+    "equipment": [],
+    "steps": [
+      "Begin in a downward dog position with hands on the ground and hips raised high.",
+      "Lower your head towards the ground by bending your elbows, then push back up to the starting position."
+    ],
+    "tips": [],
+    "references": ["https://www.verywellfit.com/how-to-do-a-pike-push-up-4589885"],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "PikePushUps"
+      ]
+  },
+{
+    "uuid": "3B587709-4111-495D-BC4C-0658BCEE4145",
+    "id": 6,
+    "name": "Squat",
+    "title": "Squat",
+    "alias": [],
+    "primer": "A fundamental lower body exercise involving bending the knees and lowering the hips, engaging muscles of the thighs, glutes, and core.",
+    "type": "compound",
+    "primary": [
+      "quadriceps"
+    ],
+    "secondary": [],
+    "equipment": [],
+    "steps": [
+      "Stand with feet shoulder-width apart, toes slightly turned out, and chest lifted.",
+      "Lower hips back and down as if sitting into a chair, keeping knees aligned with toes, then return to standing position."
+    ],
+    "tips": [],
+    "references": ["https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/50/bodyweight-squat"],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "Squat"
+      ]
+  },
+{
+    "uuid": "2339F5BD-2E8C-4446-B1A5-6156B1192229",
+    "id": 7,
+    "name": "Wall-sit squat",
+    "title": "Wall-sit squat",
+    "alias": [],
+    "primer": "A static lower body exercise where you hold a seated position against a wall, engaging muscles of the thighs and glutes.",
+    "type": "compound",
+    "primary": [
+      "quadriceps"
+    ],
+    "secondary": [
+   
+    ],
+    "equipment": [
+    
+    ],
+    "steps": [
+      "Lean against a wall with feet shoulder-width apart and knees bent at a 90-degree angle, creating a seated position.",
+      "Hold this position for a desired duration, keeping back against the wall and thighs parallel to the ground."
+    ],
+    "tips": [],
+    "references": [
+     "https://www.verywellfit.com/wall-sit-3120068"
+    ],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "WallSitSquat"
+      ]
+  },
+{
+    "uuid": "C4035736-EAF3-4DAD-8B74-BD1537E6B72D",
+    "id": 8,
+    "name": "Arm-Circle",
+    "title": "Arm-Circle",
+    "alias": [],
+    "primer": "A dynamic shoulder exercise involving circular movements with extended arms, targeting shoulder mobility and flexibility.",
+    "type": "isolation",
+    "primary": [
+      "deltoid"
+    ],
+    "secondary": [],
+    "equipment": [
+  
+    ],
+    "steps": [
+      "Stand with feet shoulder-width apart and arms extended straight out to the sides.",
+     " Rotate arms in small or large circles, forward or backward, maintaining control and engaging shoulder muscles."
+    ],
+    "tips": [],
+    "references": ["https://www.bodybuilding.com/exercises/arm-circles"],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "Armcircle"
+      ]
+  },
+{
+    "uuid": "3641964C-08E0-40CB-B07E-4FE0F22FB556",
+    "id": 9,
+    "name": "Dip Chair",
+    "title": "Dip Chair",
+    "alias": [],
+    "primer": "A strength-building exercise using parallel bars, engaging the triceps and chest muscles by lowering and lifting the body.",
+    "type": "isolation",
+    "primary": [
+      "deltoid"
+    ],
+    "secondary": [
+
+    ],
+    "equipment": [
+  
+    ],
+    "steps": [
+      "Grip parallel bars with palms facing inward and elbows slightly bent, keeping feet off the ground.",
+      "Lower body by bending elbows until upper arms are parallel to the ground, then push back up to starting position."
+    ],
+    "tips": [
+      
+    ],
+    "references": [
+    "https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/10/dip/"
+    ],
+    "pdf": [
+        "pdf/plank.jpg"
+      ],
+      "png": [
+        "png/plank.png"
+    ],
+      "video": [
+          "DipsChair"
+      ]
+}
+]
