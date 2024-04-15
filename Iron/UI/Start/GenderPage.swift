@@ -1,11 +1,3 @@
-//
-//  GenderPage.swift
-//  Iron
-//
-//  Created by Akaradach Choeychusri on 7/4/2567 BE.
-//  Copyright © 2567 BE Kiw. All rights reserved.
-//
-
 import SwiftUI
 import WorkoutDataKit
 
@@ -20,38 +12,25 @@ struct GenderPage: View {
     //    @Binding var isNextButtonEnabled: Bool
     var body: some View {
         VStack {
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
             Text("Gender")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            //                .foregroundColor(Color(red: 0.98, green: 0.66, blue: 0.01))
-                .foregroundColor(Color(.blue))
-                .padding(.top)
-            Spacer()
+                .foregroundColor(Color(red: 0, green: 0, blue: 0.7))
+                .multilineTextAlignment(.center)
+                .offset(x:0, y:-60)
             Text("* Plase select your gender")
                 .font(.headline)
                 .fontWeight(.medium)
-                .foregroundColor(showGenderSelectionWarning ? Color.red : Color.black) // เปลี่ยนสีของข้อความตามเงื่อนไข
-                .padding(.bottom)
+                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
+                .multilineTextAlignment(.center)
                 .scaleEffect(showGenderSelectionWarning ? 1.1 : 1.0)
                 .animation(.easeInOut)
-            Spacer()
-            Spacer()
-            Spacer()
-            
+                .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: -50)
             VStack(spacing: 10) {
-                Spacer()
-                Spacer()
-                Spacer()
                 Button(action: {
                     self.isMaleTapped = true
                     self.isFemaleTapped = false
                     self.showGenderSelectionWarning = false
-                    //                    self.gender = "Male"
                 }) {
                     GenderSelectionCircle(label: "Male", isSelected: isMaleTapped)
                 }
@@ -60,50 +39,31 @@ struct GenderPage: View {
                     self.isFemaleTapped = true
                     self.isMaleTapped = false
                     self.showGenderSelectionWarning = false
-                    //                    self.gender = "Male"
-                    
                 }) {
                     GenderSelectionCircle(label: "Female", isSelected: isFemaleTapped)
-                    
-                }
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                //                NavigationLink(destination: NextPage(), isActive: $isMaleTapped) {
-                //                Button(action: {
-                ////                            isNextButtonEnabled = true  // อัปเดตตัวแปรที่ผูกมัดเมื่อปุ่มถูกกด
-                //                    withAnimation {
-                //                                           self.showGenderSelectionWarning = !(isMaleTapped || isFemaleTapped) // กำหนดให้แสดงการเตือนเมื่อยังไม่ได้เลือก
-                //                                       }
-                //                        })
-                Button(action: nextButtonTapped)
-                {
-                    Text("Next")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color(.blue))
-                        .cornerRadius(10)
-                        .padding(.bottom, 0)
                 }
                 
-                //                NavigationLink(destination: NextPage(), isActive: $isFemaleTapped) {
-                //                    EmptyView()
-                //                }
-                Spacer()
-                Spacer()
-                Spacer()
+                Button(action: nextButtonTapped)
+                {
+                        Text("Next")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 120, height: 35)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color(red: 0, green: 0, blue: 0.7))
+                            .cornerRadius(25)
+                            .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 60)
+                    }
+                
             }
-            .offset(y: -40)
+            .offset(x:0, y:-10)
             .animation(.easeInOut)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        //        .background(Color.black)
         .edgesIgnoringSafeArea(.all)
-        .background(Color(red: 180/255, green: 180/255, blue: 180/255).edgesIgnoringSafeArea(.all))
+        .background(Color(red: 1, green: 1, blue: 1).edgesIgnoringSafeArea(.all))
     }
     func nextButtonTapped() {
         guard isMaleTapped || isFemaleTapped else {
@@ -111,9 +71,7 @@ struct GenderPage: View {
             return
         }
         
-//        gender = isMaleTapped ? "Male" : "Female"
         userDataStore.userData.gender = isMaleTapped ? "Male" : "Female"
-        // Set the selection state to 1 to navigate to agePage()
         selection = 1
     }
     
@@ -123,25 +81,20 @@ struct GenderPage: View {
         
         var body: some View {
             Circle()
-                .fill(isSelected ? Color(.blue) : Color(.gray)) //red: 44/255, green: 44/255, blue: 46/255
+                .fill(isSelected ? Color(red: 0, green: 0, blue: 0.7) : Color(red: 0.95, green: 0.95, blue: 0.95))
                 .frame(width: 200, height: 200)
                 .overlay(
                     Text(label)
-                        .foregroundColor(isSelected ? .white : .white)
+                        .foregroundColor(isSelected ? .white : .black)
                         .fontWeight(.bold)
                         .font(.title)
                 )
         }
     }
     
-    //struct GenderPage_Preview: PreviewProvider {
-    //    static var previews: some View {
-    //        GenderPage()
-    //    }
-    //}
+
     struct GenderPage_Preview: PreviewProvider {
-//        @State static var gender: String = ""
-        @State static var selection: Int = 0 // Add selection state variable
+        @State static var selection: Int = 0
         
         static var previews: some View {
             GenderPage( selection: $selection)

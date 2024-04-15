@@ -41,7 +41,9 @@ struct PersonalView: View {
                     
                     Text("Tall")
                     TextField("Tall", value: $userDataStore.userData.tall, formatter: NumberFormatter())
-                    
+                }
+                
+                Group {
                     Text("Upper Arm")
                     TextField("Upper Arm", value: $userDataStore.userData.upperArm, formatter: NumberFormatter())
                     
@@ -64,14 +66,18 @@ struct PersonalView: View {
             
             Button(action: toggleEdit) {
                 Text(isEditing ? "Confirm" : "Edit")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .frame(width: 120, height: 25)
                     .foregroundColor(.white)
                     .padding()
-                    .frame(maxWidth: .infinity)
                     .background(isEditing ? Color.green : Color.blue)
-                    .cornerRadius(12)
+                    .cornerRadius(25)
             }
             .padding(.top)
+            
         }
+        .padding(.horizontal,5)
         .navigationBarTitle("Personal Information", displayMode: .inline)
     }
     

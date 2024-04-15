@@ -1,11 +1,3 @@
-//
-//  BodyProportionsView .swift
-//  Iron
-//
-//  Created by Akaradach Choeychusri on 7/4/2567 BE.
-//  Copyright © 2567 BE Kiw. All rights reserved.
-//
-
 import SwiftUI
 
 struct BodyProportionsView: View {
@@ -20,109 +12,106 @@ struct BodyProportionsView: View {
     
     @Binding var userOnboarded: Bool
     
-    
     var body: some View {
-     
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
             
             ScrollView {
                 VStack {
-                    Spacer()
+                    
                     Text("Body Proportions")
                         .fontWeight(.bold)
                         .font(.largeTitle)
-                        .foregroundColor(Color(.blue))
-                    Text("*Plase select your Body Proportions")
+                        .foregroundColor(Color(red: 0, green: 0, blue: 0.7))
+                        .padding(.bottom, 1)
+                        .offset(x:0, y:45)
+                    
+                    Text("*Please select your Body Proportions")
                         .font(.headline)
                         .fontWeight(.medium)
-                        .foregroundColor(((upperArm == 0 || breast == 0 || waist == 0 || hip == 0 || thigh == 0) && isNextButtonTapped) ? .red : .black) // เช็คเงื่อนไขการทำงานของแต่ละค่า
+//                        .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2)) // เช็คเงื่อนไขการทำงานของแต่ละค่า
+                        .foregroundColor(((upperArm == 0 || breast == 0 || waist == 0 || hip == 0 || thigh == 0) && isNextButtonTapped) ? .red : Color(red: 0.2, green: 0.2, blue: 0.2)) // เช็คเงื่อนไขการทำงานของแต่ละค่า
                         .padding(.bottom)
+                        .offset(x:0, y:45)
                         .scaleEffect(((upperArm == 0 || breast == 0 || waist == 0 || hip == 0 || thigh == 0) && isNextButtonTapped) ? 1.1 : 1.0) // ให้ข้อความมีการ Scale ตามเงื่อนไข
                         .animation(.easeInOut) // เพิ่ม animation
-
-                    Spacer()
-                    Spacer()
+                    
+                    
                     
                     VStack(spacing: 20) {
                         HStack {
                             Text("Upper arm")
-                                .fontWeight(.bold)
+                                .fontWeight(.semibold)
                                 .font(.title)
-                                .foregroundColor(Color(.blue))
+                                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.7))
                             Spacer()
                             Picker(selection: $upperArm, label: Text("Upper arm")) {
                                 ForEach(0...100, id: \.self) { value in
                                     Text("\(value)")
-                                        .foregroundColor(Color(.blue))
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
                         }
                         
                         HStack {
-                            Text("Breast         ")
-                                .fontWeight(.bold)
+                            Text("Breast")
+                                .fontWeight(.semibold)
                                 .font(.title)
-                                .foregroundColor(Color(.blue))
+                                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.7))
                             Spacer()
                             Picker(selection: $breast, label: Text("Breast")) {
                                 ForEach(0...100, id: \.self) { value in
                                     Text("\(value)")
-                                        .foregroundColor(Color(.blue))
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
                         }
                         
                         HStack {
-                            Text("Waist            ")
-                                .fontWeight(.bold)
+                            Text("Waist")
+                                .fontWeight(.semibold)
                                 .font(.title)
-                                .foregroundColor(Color(.blue))
+                                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.7))
                             Spacer()
                             Picker(selection: $waist, label: Text("Waist")) {
                                 ForEach(0...100, id: \.self) { value in
                                     Text("\(value)")
-                                        .foregroundColor(Color(.blue))
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
                         }
                         
                         HStack {
-                            Text("Hip                ")
-                                .fontWeight(.bold)
+                            Text("Hip")
+                                .fontWeight(.semibold)
                                 .font(.title)
-                                .foregroundColor(Color(.blue))
+                                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.7))
                             Spacer()
                             Picker(selection: $hip, label: Text("Hip")) {
                                 ForEach(0...100, id: \.self) { value in
                                     Text("\(value)")
-                                        .foregroundColor(Color(.blue))
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
                         }
                         
                         HStack {
-                            Text("Thigh           ")
-                                .fontWeight(.bold)
+                            Text("Thigh")
+                                .fontWeight(.semibold)
                                 .font(.title)
-                                .foregroundColor(Color(.blue))
+                                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.7))
                             Spacer()
                             Picker(selection: $thigh, label: Text("Thigh")) {
                                 ForEach(0...100, id: \.self) { value in
                                     Text("\(value)")
-                                        .foregroundColor(Color(.blue))
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
                         }
                     }
                     .padding()
-                    
-                    Spacer()
+                    .offset(x:0, y:65)
+
                     Button(action: {
                         isNextButtonTapped = true
                            if upperArm != 0 && breast != 0 && waist != 0 && hip != 0 && thigh != 0 {
@@ -130,21 +119,23 @@ struct BodyProportionsView: View {
                         }
                     }) {
                         Text("Next")
-                            .font(.headline)
-                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .frame(width: 120,height: 25)
+                            .font(.title)
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color(.blue))
-                            .cornerRadius(12)
-                            .padding(.horizontal, 24)
+                            .foregroundColor(.white)
+                            .background(Color(red: 0.0, green: 0.0, blue: 0.7))
+                            .cornerRadius(25)
+                            .padding()
+                            .offset(x:0, y:120)
                     }
-                    Spacer()
                 }
                 .padding()
             }
-            .background(Color(red: 180/255, green: 180/255, blue: 180/255).edgesIgnoringSafeArea(.all))
+            .background(Color(red: 1, green: 1, blue: 1).edgesIgnoringSafeArea(.all))
         }
     }
+        
 }
 
 struct BodyProportionsView_Previews: PreviewProvider {

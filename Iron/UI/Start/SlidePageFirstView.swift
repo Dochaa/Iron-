@@ -10,8 +10,7 @@ import SwiftUI
 
 struct SlidePageFirstView: View {
     @State private var selection = 0
-//    @State private var isNextButtonTapped = false
-     @State private var gender: String = ""
+    @State private var gender: String = ""
     @Binding var userOnboarded: Bool
     
     var body: some View {
@@ -36,14 +35,9 @@ struct SlidePageFirstView: View {
             .tabViewStyle(PageTabViewStyle())
             .accentColor(.blue)
 
-            // Swipe indicator
-//            Text("Swipe to change view")
-//                .font(.caption)
-//                .foregroundColor(.gray)
-//                .padding(.top, 5)
         }
         .edgesIgnoringSafeArea(.all)
-        .background(Color(red: 180/255, green: 180/255, blue: 180/255).edgesIgnoringSafeArea(.all))
+        .background(Color(red: 1, green: 1, blue: 1).edgesIgnoringSafeArea(.all))
     }
 }
 

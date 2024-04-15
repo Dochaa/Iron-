@@ -15,78 +15,67 @@ struct WeightAndTallView: View {
     
     var body: some View {
         VStack {
-            Spacer()
             Text("WeightAndTallView")
                 .fontWeight(.bold)
                 .font(.largeTitle)
-                .foregroundColor(Color(.blue))
+                .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7))
             Text("*Plase select your Weight and TallView")
                 .font(.headline)
                 .fontWeight(.medium)
-                .foregroundColor(((weight == 0 || height == 0 ) && isNextButtonTapped) ? .red : .black) // เช็คเงื่อนไขการทำงานของแต่ละค่า
-                .padding(.bottom)
-                .scaleEffect(((weight == 0 || height == 0 ) && isNextButtonTapped) ? 1.1 : 1.0) // ให้ข้อความมีการ Scale ตามเงื่อนไข
-                .animation(.easeInOut) // เพิ่ม animation
-
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
+                .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
+                .padding(.bottom, 50)
+            
             VStack {
                 VStack {
                     Text("Weight")
                     .fontWeight(.bold)
                     .font(.title)
-                    .foregroundColor(Color(.blue))
+                    .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7))
+                    .padding(.bottom,1)
                     Text("\(String(format: "%.1f", weight)) kg")
-                    .fontWeight(.bold)
-                    .font(.title)
-                    .foregroundColor(Color(.blue))
+                        .fontWeight(.semibold)
+                    .font(.title2)
+                    .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
                 }
                 .padding(.bottom, 20)
                 Slider(value: $weight, in: 0...150, step: 0.1)
                     .padding(.horizontal)
-                
+                    .padding(.bottom, 50)
+
                 VStack {
                     Text("Height")
                         .fontWeight(.bold)
                         .font(.title)
-                        .foregroundColor(Color(.blue))
+                        .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7))
+                        .padding(.bottom,1)
                     Text("\(String(format: "%.1f", height)) cm")
-                        .fontWeight(.bold)
-                        .font(.title)
-                        .foregroundColor(Color(.blue))
+                        .fontWeight(.semibold)
+                        .font(.title2)
+                        .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
+                        .padding(.bottom,10)
                 }
                 .padding(.bottom, 20)
                 Slider(value: $height, in: 0...250, step: 0.1)
                     .padding(.horizontal)
-                Spacer()
-                Spacer()
-                Spacer()
+                    .padding(.bottom, 50)
             }
-            Spacer()
-            Spacer()
+
             Button(action: {
                 isNextButtonTapped = true
             }) {
                 Text("Next")
-                    .font(.headline)
+                    .fontWeight(.bold)
+                    .frame(width: 120, height: 25)
+                    .font(.title)
                     .foregroundColor(.white)
                     .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color(.blue))
-                    .cornerRadius(12)
-                    .padding(.horizontal, 24)
+                    .background(Color(red: 0.0, green: 0.0, blue: 0.7))
+                    .cornerRadius(25)
+                    .padding(.all)
             }
-            Spacer()
-                .padding()
         }
-        .background(Color(red: 180/255, green: 180/255, blue: 180/255).edgesIgnoringSafeArea(.all))
+        .padding(.horizontal,30)
+        .background(Color(red: 1, green: 1, blue: 1).edgesIgnoringSafeArea(.all))
     }
 }
 

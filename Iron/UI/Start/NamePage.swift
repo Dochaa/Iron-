@@ -1,11 +1,3 @@
-//
-//  NamePage.swift
-//  Iron
-//
-//  Created by Akaradach Choeychusri on 7/4/2567 BE.
-//  Copyright © 2567 BE Kiw. All rights reserved.
-//
-
 import SwiftUI
 
 class UserAuthentication: ObservableObject {
@@ -22,68 +14,49 @@ struct NamePage: View {
     @State private var isNextButtonTapped = false // เพิ่ม state เพื่อตรวจสอบว่าปุ่ม Next ถูกกดหรือไม่
 
     var body: some View {
-        NavigationView {
             VStack {
                 Text("Name")
                     .font(.largeTitle)
-                    .fontWeight(.black)
-                    .foregroundColor(Color(.blue))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7))
                     .multilineTextAlignment(.center)
-                    .lineLimit(2)
-                    .padding(.top)
+                    .padding(1)
+                
                 Text("*Plase select your name")
-                    .font(.headline)
-                    .fontWeight(.medium)
-                    .foregroundColor(name.isEmpty && isNextButtonTapped ? Color.red : Color.black) // เช็คค่า TextField และปุ่ม Next
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
+                   // .foregroundColor(name.isEmpty && isNextButtonTapped ? Color.red : Color.black) // เช็คค่า TextField และปุ่ม Next
                     .padding(.bottom)
                     .scaleEffect(name.isEmpty && isNextButtonTapped ? 1.1 : 1.0) // ให้ข้อความมีการ Scale ตามเงื่อนไข
                     .animation(.easeInOut) // เพิ่ม animation
 
-                Spacer()
-
                 VStack {
-                    Rectangle()
-                        .fill(Color(.blue))
-                        .frame(width: 300, height: 1.69)
                     TextField("Your Name", text: $name)
-//                    TextField("Your Name", text: $user.username)
-                        .frame(width: 300)
+                        .frame(width: 300, height: 50)
+                        .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(10)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .foregroundColor(Color(.blue))
                         .font(.title2)
-                        .padding()
-                        .cornerRadius(20)
-
-                    Rectangle()
-                        .fill(Color(.blue))
-                        .frame(width: 300, height: 1.69)
+                        .padding(.all)
                 }
-                .padding(.horizontal, 20)
-
-                Spacer()
-
                 Button(action: {
-                    // Set the state of isNextButtonTapped to true when Next is tapped
-                    isNextButtonTapped = true
-                    // Navigate to the next page here
                 }) {
                     Text("Next")
-                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .frame(width: 120, height: 25)
+                        .font(.title)
                         .foregroundColor(.white)
                         .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color(.blue))
-                        .cornerRadius(12)
-                        .padding(.horizontal, 24)
-                        .offset(y: -10)
+                        .background(Color(red: 0.0, green: 0.0, blue: 0.7))
+                        .cornerRadius(25)
+                        .padding(.top)
                 }
 
-                Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(red: 180/255, green: 180/255, blue: 180/255).edgesIgnoringSafeArea(.all))
-//            .navigationBarHidden(true) // ซ่อน Navigation Bar
-        }
+            .background(Color(red: 1, green: 1, blue: 1).edgesIgnoringSafeArea(.all))
     }
 }
 

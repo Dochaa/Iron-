@@ -12,32 +12,6 @@ struct ContentView : View {
     @State private var showOnboarding: Bool = true
     @AppStorage ("userOnboarded") var userOnboarded: Bool = false
     var body: some View {
-//                Group {
-//                            if UserDefaults.standard.bool(forKey: "OnboardingCompleted") {
-//                                tabView
-//                            } else {
-//                                SlidePageFirstView()
-//                            }
-//                        }
-//        Group {
-//            if userOnboarded{
-//                tabView
-//            }else{
-//                VStack{
-//                    Text("User")
-//                        .font(Font.system(size: 50))
-//                    Button(action: {
-//                        userOnboarded = true
-//                        print(UserDefaults.standard.bool(forKey: "userOnboarded"))
-//                    })
-//                    {
-//                        Text("tap")
-//                            .font(Font.system(size: 50))
-//                    }
-//                }
-//            }
-//        }
-        
         Group {
                   if userOnboarded {
                       tabView

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1804,7 +1804,7 @@
 				};
 			};
 			buildConfigurationList = 8A7D6E8F200BF92E00AA0FA7 /* Build configuration list for PBXProject "Iron" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2617,7 +2617,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = Z388WAMYJP;
+				DEVELOPMENT_TEAM = 9N87STTTKR;
 				INFOPLIST_FILE = Iron/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2642,7 +2642,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = Z388WAMYJP;
+				DEVELOPMENT_TEAM = 9N87STTTKR;
 				INFOPLIST_FILE = Iron/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
